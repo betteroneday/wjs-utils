@@ -10,31 +10,33 @@ export default {
       format: "umd",
       // umd必须写name
       name: "wjsUtils",
-      file: "dist/bundle.js",
+      file: "libs/bundle.js",
     },
     {
       format: "cjs",
-      file: "dist/bundle.commonjs.js",
+      file: "libs/bundle.commonjs.js",
     },
     {
       format: "amd",
-      file: "dist/bundle.amd.js",
+      file: "libs/bundle.amd.js",
     },
     {
       format: "es",
-      file: "dist/bundle.es.js",
+      file: "libs/bundle.es.js",
     },
     {
       format: "iife",
       name: "wjsUtils",
-      file: "dist/bundle.browser.js",
+      file: "libs/bundle.browser.js",
     },
   ],
   plugins: [
     commonjs(),
     babel({
+      exclude: 'node_modules/**',
+      extensions: ['.js', '.ts'],
       babelHelpers: "bundled",
     }),
-    terser(),
+    // terser()
   ],
 };
