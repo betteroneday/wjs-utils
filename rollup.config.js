@@ -1,3 +1,7 @@
+import commonjs from "@rollup/plugin-commonjs";
+import babel from "@rollup/plugin-babel";
+// import { terser } from "rollup-plugin-terser";
+
 export default {
   // 入口
   input: "src/index.js",
@@ -25,5 +29,12 @@ export default {
       name: "wjsUtils",
       file: "dist/bundle.browser.js",
     },
+  ],
+  plugins: [
+    commonjs(),
+    babel({
+      babelHelpers: "bundled",
+    }),
+    // terser(),
   ],
 };
