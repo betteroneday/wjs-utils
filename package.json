@@ -2,9 +2,8 @@
   "name": "wjs-utils",
   "version": "1.0.0",
   "description": "通用工具函数",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/betteroneday/wjs-utils/issues"
   },
-  "homepage": "https://github.com/betteroneday/wjs-utils#readme"
+  "homepage": "https://github.com/betteroneday/wjs-utils#readme",
+  "devDependencies": {
+    "rollup": "^2.78.1"
+  }
 }
