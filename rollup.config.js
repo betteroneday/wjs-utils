@@ -4,7 +4,7 @@ import { terser } from "rollup-plugin-terser";
 
 export default {
   // 入口
-  input: "src/index.js",
+  input: "src/main.js",
   output: [
     {
       format: "umd",
@@ -37,6 +37,6 @@ export default {
       extensions: ['.js', '.ts'],
       babelHelpers: "bundled",
     }),
-    // terser()
+    terser()
   ],
 };
