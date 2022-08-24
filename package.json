@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "通用工具函数",
   "scripts": {
-    "build": "rollup -c",
+    "build": "yarn test && rollup -c",
     "test": "jest"
   },
   "repository": {
