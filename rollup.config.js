@@ -10,24 +10,24 @@ export default {
       format: "umd",
       // umd必须写name
       name: "wjsUtils",
-      file: "libs/bundle.js",
+      file: "lib/bundle.js",
     },
     {
       format: "cjs",
-      file: "libs/bundle.commonjs.js",
+      file: "lib/bundle.commonjs.js",
     },
     {
       format: "amd",
-      file: "libs/bundle.amd.js",
+      file: "lib/bundle.amd.js",
     },
     {
       format: "es",
-      file: "libs/bundle.es.js",
+      file: "lib/bundle.es.js",
     },
     {
       format: "iife",
       name: "wjsUtils",
-      file: "libs/bundle.browser.js",
+      file: "lib/bundle.browser.js",
     },
   ],
   plugins: [
