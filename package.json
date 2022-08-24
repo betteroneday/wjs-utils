@@ -1,0 +1,19 @@
+{
+  "name": "wjs-utils",
+  "version": "1.0.0",
+  "description": "通用工具函数",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betteroneday/wjs-utils.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betteroneday/wjs-utils/issues"
+  },
+  "homepage": "https://github.com/betteroneday/wjs-utils#readme"
+}
