@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "通用工具函数",
   "scripts": {
-    "build": "yarn test && rollup -c",
-    "test": "jest"
+    "build": "yarn test && yarn docs && rollup -c",
+    "test": "jest",
+    "docs": "node scripts/docs.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,10 @@
     "@babel/preset-env": "^7.18.10",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.2",
+    "fs-extra": "^10.1.0",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
+    "jsdoc-to-markdown": "^7.1.1",
     "rollup": "^2.78.1",
     "rollup-plugin-terser": "^7.0.2"
   }

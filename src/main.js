@@ -1,4 +1,5 @@
+export * from "./file";
 export * from "./reg";
-export * from "./url";
 export * from "./time";
+export * from "./url";
 
