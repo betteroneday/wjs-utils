@@ -1,6 +1,6 @@
 {
   "name": "wjs-utils",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "通用工具函数",
   "main": "lib/utils.js",
   "scripts": {
