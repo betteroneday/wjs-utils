@@ -1,8 +1,10 @@
 {
   "name": "wjs-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "通用工具函数",
   "main": "lib/utils.js",
+  "module": "lib/utils.es.js",
+  "browser": "lib/utils.browser.js",
   "scripts": {
     "clean": "rimraf ./lib",
     "build": "yarn clean && yarn test && yarn docs && rollup -c",
