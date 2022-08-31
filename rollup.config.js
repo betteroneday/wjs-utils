@@ -4,30 +4,30 @@ import { terser } from "rollup-plugin-terser";
 
 export default {
   // 入口
-  input: "src/main.js",
+  input: "src/index.js",
   output: [
     {
       format: "umd",
       // umd必须写name
       name: "wjsUtils",
-      file: "lib/bundle.js",
+      file: "lib/utils.js",
     },
     {
       format: "cjs",
-      file: "lib/bundle.commonjs.js",
+      file: "lib/utils.commonjs.js",
     },
     {
       format: "amd",
-      file: "lib/bundle.amd.js",
+      file: "lib/utils.amd.js",
     },
     {
       format: "es",
-      file: "lib/bundle.es.js",
+      file: "lib/utils.es.js",
     },
     {
       format: "iife",
       name: "wjsUtils",
-      file: "lib/bundle.browser.js",
+      file: "lib/utils.browser.js",
     },
   ],
   plugins: [

@@ -2,8 +2,10 @@
   "name": "wjs-utils",
   "version": "1.0.0",
   "description": "通用工具函数",
+  "main": "lib/utils.js",
   "scripts": {
-    "build": "yarn test && yarn docs && rollup -c",
+    "clean": "rimraf ./lib",
+    "build": "yarn clean && yarn test && yarn docs && rollup -c",
     "test": "jest",
     "docs": "node scripts/docs.js"
   },
