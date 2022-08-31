@@ -1,4 +1,38 @@
-# wjs-utils
+# wjs-utils⚡
+
+[![npm version](https://badge.fury.io/js/wjs-utils.svg)](https://www.npmjs.com/package/wjs-utils)
+
+# 安装 💡
+```ball
+yarn add wjs-utils
+```
+or
+
+```ball
+npm install wjs-utils
+```
+
+# 使用 🌲
+```JavaScript
+import utils from "wjs-utils";
+utils.isEmail("aaa@123.com")
+```
+
+or
+
+```JavaScript
+import { isEmail } from "wjs-utils";
+isEmail("aaa@123.com")
+```
+
+or
+
+```JavaScript
+const utils = require("wjs-utils");
+```
+
+# 持续更新中 ～ 🚀🚀🚀
+
 
 ## isEmail(email) ⇒ <code>boolean</code>
 判断是否为邮箱
@@ -89,3 +123,11 @@ formatUrl("http://www.baidu.com?a=1&a=2&b=3&b=4") // { a: ["1", "2"], b: ["3", "
 | --- | --- |
 | blob | <code>\*</code> | 
 | param1 | <code>\*</code> | 
+
+## Author
+
+wjs email:imwangxuan@gmail.com
+
+## License
+
+[MIT](./LICENSE) License © 2022 [wjs](https://github.com/betteroneday)
