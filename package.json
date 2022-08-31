@@ -1,6 +1,6 @@
 {
   "name": "wjs-utils",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "通用工具函数",
   "main": "lib/utils.umd.js",
   "module": "lib/utils.esm.js",
