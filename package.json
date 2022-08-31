@@ -1,10 +1,9 @@
 {
   "name": "wjs-utils",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "通用工具函数",
-  "main": "lib/utils.js",
-  "module": "lib/utils.es.js",
-  "browser": "lib/utils.browser.js",
+  "main": "lib/utils.umd.js",
+  "module": "lib/utils.esm.js",
   "scripts": {
     "clean": "rimraf ./lib",
     "build": "yarn clean && yarn test && yarn docs && rollup -c",
@@ -26,6 +25,7 @@
     "@babel/preset-env": "^7.18.10",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "fs-extra": "^10.1.0",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",

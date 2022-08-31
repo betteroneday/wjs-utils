@@ -1,4 +1,8 @@
+// rollup 无法识别 node_modules 中的包，帮助 rollup 查找外部模块，然后导入
+import resolve from "@rollup/plugin-node-resolve";
+// 将 CommonJS 模块转换为 ES6 供 rollup 处理
 import commonjs from "@rollup/plugin-commonjs";
+// ES6 转 ES5，让我们可以使用 ES6 新特性来编写代码
 import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 
@@ -10,33 +14,24 @@ export default {
       format: "umd",
       // umd必须写name
       name: "wjsUtils",
-      file: "lib/utils.js",
-    },
-    {
-      format: "cjs",
-      file: "lib/utils.commonjs.js",
-    },
-    {
-      format: "amd",
-      file: "lib/utils.amd.js",
+      file: "lib/utils.umd.js",
     },
     {
       format: "es",
-      file: "lib/utils.es.js",
+      file: "lib/utils.esm.js",
     },
     {
-      format: "iife",
-      name: "wjsUtils",
-      file: "lib/utils.browser.js",
+      format: "cjs",
+      file: "lib/utils.cjs.js",
     },
   ],
   plugins: [
-    commonjs(),
+    resolve(),
     babel({
-      exclude: 'node_modules/**',
-      extensions: ['.js', '.ts'],
+      exclude: "node_modules/**",
       babelHelpers: "bundled",
     }),
-    terser()
+    commonjs(),
+    terser(),
   ],
 };
